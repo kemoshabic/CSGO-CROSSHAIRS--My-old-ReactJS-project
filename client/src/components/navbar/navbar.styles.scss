@@ -1,0 +1,93 @@
+$color-secondary: #0a0b20;
+
+$color-primary: #fd074e;
+$color-white: #ffffff;
+
+.navbar {
+  grid-area: navbar;
+  background-color: $color-secondary;
+  @media only screen and (max-width: 57.5em) {
+    // 920px
+    display: flex;
+    background-image: linear-gradient(to right, #7ee8fa, #80ff72,);
+    align-items: center;
+    justify-content: space-evenly;
+    border-bottom: none;
+  }
+  @media only screen and (max-width: 37.5em ){ 
+    flex-direction: column;
+    padding-bottom: 2rem;
+  }
+
+  &__img-box {
+    height: 16rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -4rem;
+    border-bottom: 1px solid $color-primary;
+    @media only screen and (max-width: 57.5em) {
+      // 920px
+      border-bottom: none;
+      height: 12rem;
+    }
+  }
+  &__img{
+    @media only screen and (max-width: 81.25em ){ // 1300px
+      width:35rem;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+   
+    margin-top: 4vw;
+    list-style: none;
+    & li {
+      list-style: none;
+      @media only screen and (max-width: 25em) {
+        &:not(:last-child){
+          padding-bottom: 2rem;
+        }
+      }
+    }
+    @media only screen and (max-width: 57.5em) {
+      // 920px
+      margin-top: 0;
+      flex-direction: row;
+    }
+    @media only screen and (max-width: 25em) {
+      flex-direction: column;
+    }
+  }
+  &__item {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2rem;
+    align-items: center;
+    text-decoration: none;
+    list-style: none;
+    margin-top: 0.5rem;
+    @media only screen and (max-width: 57.5em) {
+      // 920px
+      margin-top: 0;
+      padding: 0;
+      padding-right: 2rem;
+    }
+    &:hover{
+      background-color: rgba(#D2D2D2, 0.07);   
+    }
+  }
+  &__text {
+    color: $color-white;
+    font-size: 2.4rem;
+    font-weight: 400;
+    @media only screen and (max-width: 57.5em) {
+      // 920px
+      padding-right: 0.5rem;
+      color: #000000;
+      text-align: center;
+    }
+  }
+}

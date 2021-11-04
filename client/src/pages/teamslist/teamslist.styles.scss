@@ -1,0 +1,16 @@
+.teams-page{
+  padding: 10rem 15rem 10rem 15rem;
+  @media only screen and (max-width: 103.12em ){
+    padding: 6rem 3rem 5rem 3rem;
+  }
+
+  &__heading{
+    font-size: 2.4rem;
+    padding-bottom: 2rem;
+    @media only screen and (max-width: 103.12em ){
+      text-align: center;
+      padding-bottom: 3rem;
+    }
+  }
+
+}

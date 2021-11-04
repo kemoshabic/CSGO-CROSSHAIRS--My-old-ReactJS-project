@@ -1,0 +1,84 @@
+$color-secondary-light: #0c0e25;
+$color-primary: #fd074e;
+
+@mixin clipAndColor {
+  background-clip: text;
+  color: transparent;
+}
+
+.header {
+  grid-area: header-main;
+  background-color: $color-secondary-light;
+  display: flex;
+  flex-direction: right;
+  padding-right: 7vw;
+  justify-content: flex-end;
+  align-items: center;
+  @media only screen and (max-width: 81.25em ){ // 1300px
+    padding-right: 3rem;
+  }
+  @media only screen and (max-width: 57.5em) {
+    padding-right: 0;
+    justify-content: center;
+    padding: 2rem;
+  }
+
+
+  &__text {
+    margin-right: 4rem;
+    text-decoration: none;
+    font-size: 2.1rem;
+    color: #ffffff;
+    transition: all 0.5s;
+    cursor: pointer;
+    @media only screen and (max-width: 81.25em ){ // 1300px
+      margin-right: 2rem;
+      font-size: 2rem;
+    }
+
+    &:hover {
+      background-image: linear-gradient(to right, #fd074e, #f67062);
+      @include clipAndColor();
+    }
+    &-red {
+      background-image: linear-gradient(to right, #fd074e, #f67062);
+      @include clipAndColor();
+      &:hover {
+        background-image: linear-gradient(to right, #80ff72, #7ee8fa);
+        @include clipAndColor();
+      }
+    }
+    &-signin {
+      padding-left: 6rem;
+      @media only screen and (max-width: 81.25em ){ // 1300px
+        padding-left: 2rem;
+      }
+    }
+  }
+
+  &__signout {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &:hover &--logo {
+      fill: #fd074e;
+    }
+
+    &--logo {
+      margin-top: 0.2rem;
+      cursor: pointer;
+      transition: all 0.5s;
+      margin-left: -2.4rem;
+      fill: #ffffff;
+      height: 2.5rem;
+      width: 2.5rem;
+      @media only screen and (max-width: 81.5em) {
+        margin-left: 0;
+      }
+      @media only screen and (max-width: 31.25em) {
+        margin-left: -3rem;
+      }
+    }
+  }
+}

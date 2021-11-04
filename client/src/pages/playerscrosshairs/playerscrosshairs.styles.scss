@@ -1,0 +1,58 @@
+.crosshair {
+  display: flex;
+  flex-direction: column;
+  padding-top: 3rem;
+  &__wrap {
+    padding-bottom: 2rem;
+    padding-left: 7rem;
+    padding-top: 2rem;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #fd074e;
+    @media only screen and (max-width: 37.5em) {
+      padding-bottom: 1rem;
+      padding-left: 2rem;
+      padding-top: 2rem;
+    }
+  }
+  &__heading {
+    color: #ffffff;
+    font-size: 2.8rem;
+    font-weight: 400;
+    padding-right: 2rem;
+    margin-bottom: -0.5rem;
+    padding-left: 1.5rem;
+  }
+  &__team {
+    color: #ffffff;
+    font-size: 1.8rem;
+    margin-bottom: -1.2rem;
+    padding-right: 2rem;
+  }
+  
+  &__img{
+    height: 7rem;
+    width: 9rem;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: center;
+    @media only screen and (max-width: 37.5em) {
+      background-size: cover;
+      width: 5rem;
+      margin-left: 2rem;
+    }
+  }
+  &__delete {
+    font-size: 2rem;
+    color: red;
+    text-decoration: underline;
+    margin-bottom: -2.8rem;
+    padding-left: 1.8rem;
+    cursor: pointer;
+    &:hover {
+      background-image: linear-gradient(to right, #80ff72, #7ee8fa);
+      background-clip: text;
+      color: transparent;
+    }
+  }
+}

@@ -1,0 +1,55 @@
+.directory-item{
+  width: 25rem;
+  height: 43rem;
+  border-top-right-radius: 2.1rem;
+  background-color: #FFFFFF;
+
+  &__heading-box{
+    height: 8rem;
+    border-top-right-radius: 2rem;
+    background-color: #FF5900;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__heading{
+    font-size: 2.4rem;
+    &--black{
+      color: #000000;
+
+    }
+  }
+  &__grey-box{
+    cursor: pointer;
+    background-color:#EBEBEB;
+    height: 5.6rem;
+
+  }
+
+  &__white-box{
+    cursor: pointer;
+    background-color:#FFFFFF;
+    height: 5.6rem;
+  }
+
+  &__player{
+    padding-top: 1.5rem;
+    color: #000000;
+    font-size: 1.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &:hover{
+      color: #6843CF;
+    }
+  }
+  &__logo{
+    height: 8.3rem;
+    width: 25rem;
+    background-color: #FFFFFF;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+

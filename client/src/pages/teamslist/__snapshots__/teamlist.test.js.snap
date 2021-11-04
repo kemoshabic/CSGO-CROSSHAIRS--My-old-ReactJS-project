@@ -1,0 +1,3 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TeamsList Component should render the TeamsList component 1`] = `ShallowWrapper {}`;

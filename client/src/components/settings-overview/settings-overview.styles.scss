@@ -1,0 +1,36 @@
+
+.overview{
+  display: flex;
+  flex-wrap: wrap;
+  &__upper{
+    background-color: #ffffff;
+    display: flex;
+    padding: 1rem;
+    border:  1px solid #707070;
+    align-items: center;
+  }
+  &__lower{
+    background-color: #ffffff;
+    padding: 1rem;
+    border-left: 1px solid #707070;
+    border-bottom: 1px solid #707070;
+    border-right: 1px solid #707070;
+  }
+  &__item{
+    width: 20rem;
+    display: flex;
+    flex-direction: column;
+  }
+  &__heading{
+    padding-left: 1rem;
+    background-image: linear-gradient(to right, #0C0C0C, #4834D4);
+    background-clip: text;
+    color: transparent;
+    font-size: 2.2rem;
+    font-weight: 400;
+  }
+  &__text{
+    color: #0A2B47;
+    font-size: 1.8rem;
+  }
+}

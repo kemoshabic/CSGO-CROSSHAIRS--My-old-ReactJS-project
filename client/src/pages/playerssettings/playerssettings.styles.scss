@@ -1,0 +1,54 @@
+.settings{
+  display: flex;
+  flex-direction: column;
+  &__block{
+    padding: 5rem 11rem;
+    border-bottom: 1px solid #FD074E;
+    display: flex;
+    flex-direction: column;
+    @media only screen and (max-width: 103.12em) {
+      // 1650px
+      padding: 4rem 6rem;
+    }
+    @media only screen and (max-width: 57.5em) {
+      // 920px
+      padding: 3rem 4rem;
+    }
+  }
+  &__top{
+    display: flex;
+    align-items: center;
+    padding-bottom: 4rem;
+    @media only screen and (max-width: 103.12em) {
+      // 1650px
+      padding-bottom: 2rem;
+    }
+  }
+  &__heading{
+    color: #FFFFFF;
+    font-size: 2.8rem;
+    padding-left: 2rem;
+  }
+  &__team{
+    padding-left: 1.5rem;
+    margin-top: 0.8rem;
+    color: #FFFFFF;
+    font-size: 1.8rem;
+  }
+  &__show{
+    align-self: flex-start;
+  }
+  &__delete {
+    font-size: 2rem;
+    color: red;
+    text-decoration: underline;
+    padding-left: 1.8rem;
+    margin-bottom: -0.5rem;
+    cursor: pointer;
+    &:hover {
+      background-image: linear-gradient(to right, #80ff72, #7ee8fa);
+      background-clip: text;
+      color: transparent;
+    }
+  }
+}

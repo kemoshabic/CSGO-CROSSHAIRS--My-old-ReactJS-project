@@ -1,0 +1,9 @@
+.copy{
+  border: none;
+  color: #ffffff;
+  font-size: 2.2rem;
+  background-color: transparent;
+  &:focus{
+    outline: none;
+  }
+}
